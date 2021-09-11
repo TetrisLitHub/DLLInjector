@@ -8,3 +8,5 @@ A Windows program to inject *.DLL files
 3: Input your target window and path of the DLL when it says to
 
 4: profit
+# Backstory
+The story behind me creating this program was me wanting to learn low level things like memory manipulation and also to become better at c++. I still like java better for now tho :/
