@@ -90,7 +90,7 @@ int main() {
 	ALERTmsg("Setup complete. To execute the DLL, "); system("pause");
 	ALERTmsg("Attempting to execute the DLL...");
 	HANDLE dllthread_handle = CreateRemoteThread(procHandle, 0, 0, (LPTHREAD_START_ROUTINE)loadlibrary, dlladdress, 0, 0);
-	if (dllthread_handle) { SUCCESSmsg("Executed DLL successfully"); }
+	if (dllthread_handle) { SUCCESSmsg("Executed DLL successfully"); system("pause"); }
 	else { CloseHandle(procHandle); ERRORmsg("Failed to execute DLL"); }
 
 	// close handles
