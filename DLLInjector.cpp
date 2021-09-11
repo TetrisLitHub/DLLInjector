@@ -17,7 +17,7 @@ void ALERTmsg(std::string message)   { std::cout << "["; Color(0x06); std::cout 
 DWORD getPID(LPCSTR window_title_) {
 	// find window handle from parameter
 	HWND handle = FindWindowA(NULL, window_title_);
-	if (handle == NULL) { ALERTmsg("Could not get handle for window"); }
+	if (handle == NULL) { ERRORmsg("Could not get handle for window"); }
 	// return pid of window
 	DWORD pid;
 	GetWindowThreadProcessId(handle, &pid);
